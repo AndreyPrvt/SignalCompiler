@@ -1,0 +1,23 @@
+PROGRAM TEST;
+LABEL 3, 2, 4, 5, 22, 12, 13, 7;
+(* LABEL 3;*)
+	BEGIN
+		3:;
+		GOTO 3;
+		22:
+			GOTO 2;
+		2:
+			IF X = 4 THEN
+				GOTO 5;
+			ELSE
+				GOTO 4;
+			ENDIF;
+		5:
+			IF B = 48 THEN
+				GOTO 13;
+				12:
+				GOTO 12;
+				13:;
+			ENDIF;
+		4:;
+	END.
